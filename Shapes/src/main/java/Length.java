@@ -5,7 +5,7 @@ public class Length {
 	
 	private Length(final double measure){
 		if(measure <= 0.0){
-			throw new IllegalArgumentException();
+			throw new IllegalArgumentException("measure: " + measure + " is not valid");
 		}
 		this.measure = measure;
 	}
