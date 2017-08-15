@@ -7,8 +7,8 @@ public class Circle implements Shape{
 		this.radius = radius;
 	}
 	
-	public static Circle of(double radius) {
-		return new Circle(Length.of(radius));
+	public static Circle of(final Length radius) {
+		return new Circle(radius);
 	}
 
 	public double getArea() {

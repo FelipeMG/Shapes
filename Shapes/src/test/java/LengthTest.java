@@ -6,17 +6,17 @@ import org.junit.Test;
 public class LengthTest {
 	
 	@Test
-	public void nonNegativeLength(){
+	public void aPositiveLengthIsValid(){
 		assertThat(Length.of(3).getMeasure(), is(3.0));
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
-	public void negativeLength(){
+	public void aNegativeLengthIsInvalid(){
 		assertThat(Length.of(-3).getMeasure(), is(-3.0));
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
-	public void zeroLength(){
+	public void aLengthOfZeroIsInvalid(){
 		assertThat(Length.of(0).getMeasure(), is(0.0));
 	}
 

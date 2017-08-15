@@ -8,8 +8,8 @@ public class Rectangle implements Shape{
 		this.height = height;
 	}
 	
-	public static Rectangle of(double width, double height) {
-		return new Rectangle(Length.of(width), Length.of(height));
+	public static Rectangle of(Length width, Length height) {
+		return new Rectangle(width, height);
 	}
 	
 	public Length getWidth() {

@@ -11,8 +11,8 @@ public class Square implements Shape {
 		return this.side;
 	}
 	
-	public static Square of(final double side) {
-		return new Square(Length.of(side));
+	public static Square of(final Length side) {
+		return new Square(side);
 	}
 	
 	public double getArea() {

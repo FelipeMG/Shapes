@@ -13,18 +13,18 @@ public class ShapesOperationsTest {
 	
 	@Before
 	public void appendShapes() {
-		shapes.add(Rectangle.of(3, 2));
-		shapes.add(Square.of(3));
-		shapes.add(Circle.of(3));
+		shapes.add(Rectangle.of(Length.of(3), Length.of(2)));
+		shapes.add(Square.of(Length.of(3)));
+		shapes.add(Circle.of(Length.of(3)));
 	}
 	
 	@Test
-	public void sumOfAreasValid(){
+	public void theSumOfTheAreasOfARectangleOfSides3And2ASquareOfSide3AndACircleOfRadius3Is43(){
 		assertThat(ShapesOperations.sumOfAreas(shapes), is(43.27433388230814));		
 	}
 	
 	@Test
-	public void sumOfPerimetersValid(){
+	public void theSumOfThePerimetersOfARectangleOfSides3And2ASquareOfSide3AndACircleOfRadius3Is40(){
 		assertThat(ShapesOperations.sumOfPerimeters(shapes), is(40.84955592153876));		
 	}
 
